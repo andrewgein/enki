@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D17F94C2D3B0727001723B7 /* DecksStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F94B2D3B0727001723B7 /* DecksStorage.swift */; };
+		5D17F94E2D3B0A56001723B7 /* StatisticsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F94D2D3B0A56001723B7 /* StatisticsStorage.swift */; };
+		5D17F9502D3B0A97001723B7 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F94F2D3B0A97001723B7 /* Statistic.swift */; };
+		5D17F9522D3B1374001723B7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F9512D3B1374001723B7 /* GameViewController.swift */; };
+		5D2F562C2D3EBF6F004CDD76 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F562B2D3EBF6F004CDD76 /* Scheduler.swift */; };
+		5D2F562E2D3EBF8A004CDD76 /* SM2_Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2F562D2D3EBF8A004CDD76 /* SM2_Scheduler.swift */; };
+		5D45A95F2D4432B500941E86 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D45A95D2D4432B500941E86 /* Model.xcdatamodeld */; };
+		5D45A9612D44350400941E86 /* StringSanitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45A9602D44350400941E86 /* StringSanitizer.swift */; };
+		5D45A9632D44ABE200941E86 /* EditDeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45A9622D44ABE200941E86 /* EditDeckViewController.swift */; };
+		5D45A9652D44ACC300941E86 /* CardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D45A9642D44ACC300941E86 /* CardCellView.swift */; };
+		5D88F4192D40191B0099A7FA /* EnkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88F4182D40191B0099A7FA /* EnkiTests.swift */; };
+		5D88F41F2D4019210099A7FA /* SM2_SchedulerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88F4102D4016BD0099A7FA /* SM2_SchedulerTest.swift */; };
+		5D88F4212D402DF50099A7FA /* CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D88F4202D402DF50099A7FA /* CardTests.swift */; };
+		5DF1A1272D38FC5C00490FE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1A1262D38FC5C00490FE7 /* AppDelegate.swift */; };
+		5DF1A1292D38FC5C00490FE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1A1282D38FC5C00490FE7 /* SceneDelegate.swift */; };
+		5DF1A12B2D38FC5C00490FE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1A12A2D38FC5C00490FE7 /* ViewController.swift */; };
+		5DF1A12E2D38FC5C00490FE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1A12C2D38FC5C00490FE7 /* Main.storyboard */; };
+		5DF1A1302D38FC5D00490FE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1A12F2D38FC5D00490FE7 /* Assets.xcassets */; };
+		5DF1A1332D38FC5D00490FE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF1A1312D38FC5D00490FE7 /* LaunchScreen.storyboard */; };
+		5DF1A1402D38FD2B00490FE7 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1A13F2D38FD2B00490FE7 /* Card.swift */; };
+		5DF1A1432D38FE8900490FE7 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1A1422D38FE8900490FE7 /* Deck.swift */; };
+		5DF1A1452D39029B00490FE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1A1442D39029B00490FE7 /* HomeViewController.swift */; };
+		5DF1A1492D3986B100490FE7 /* EditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1A1482D3986B100490FE7 /* EditCardViewController.swift */; };
+		5DF3A3912D40553F002D9D98 /* DeckCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF3A3902D40553F002D9D98 /* DeckCellView.swift */; };
+		5DF3A3932D42D653002D9D98 /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF3A3922D42D653002D9D98 /* AddCardViewController.swift */; };
+		5DF3A3952D42E4E9002D9D98 /* CSVParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF3A3942D42E4E9002D9D98 /* CSVParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D88F41A2D40191B0099A7FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF1A11B2D38FC5C00490FE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF1A1222D38FC5C00490FE7;
+			remoteInfo = Enki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D17F94B2D3B0727001723B7 /* DecksStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksStorage.swift; sourceTree = "<group>"; };
+		5D17F94D2D3B0A56001723B7 /* StatisticsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsStorage.swift; sourceTree = "<group>"; };
+		5D17F94F2D3B0A97001723B7 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		5D17F9512D3B1374001723B7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		5D2F562B2D3EBF6F004CDD76 /* Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = "<group>"; };
+		5D2F562D2D3EBF8A004CDD76 /* SM2_Scheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SM2_Scheduler.swift; sourceTree = "<group>"; };
+		5D45A95E2D4432B500941E86 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5D45A9602D44350400941E86 /* StringSanitizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSanitizer.swift; sourceTree = "<group>"; };
+		5D45A9622D44ABE200941E86 /* EditDeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeckViewController.swift; sourceTree = "<group>"; };
+		5D45A9642D44ACC300941E86 /* CardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellView.swift; sourceTree = "<group>"; };
+		5D88F4102D4016BD0099A7FA /* SM2_SchedulerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SM2_SchedulerTest.swift; sourceTree = "<group>"; };
+		5D88F4162D40191B0099A7FA /* EnkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D88F4182D40191B0099A7FA /* EnkiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnkiTests.swift; sourceTree = "<group>"; };
+		5D88F4202D402DF50099A7FA /* CardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTests.swift; sourceTree = "<group>"; };
+		5DF1A1232D38FC5C00490FE7 /* Enki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF1A1262D38FC5C00490FE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DF1A1282D38FC5C00490FE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5DF1A12A2D38FC5C00490FE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DF1A12D2D38FC5C00490FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DF1A12F2D38FC5D00490FE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DF1A1322D38FC5D00490FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DF1A1342D38FC5D00490FE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF1A13F2D38FD2B00490FE7 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5DF1A1422D38FE8900490FE7 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		5DF1A1442D39029B00490FE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5DF1A1482D3986B100490FE7 /* EditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardViewController.swift; sourceTree = "<group>"; };
+		5DF3A3902D40553F002D9D98 /* DeckCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCellView.swift; sourceTree = "<group>"; };
+		5DF3A3922D42D653002D9D98 /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		5DF3A3942D42E4E9002D9D98 /* CSVParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CSVParser.swift; path = Enki/CSVParser.swift; sourceTree = SOURCE_ROOT; };
+		5DF3A3982D441AC5002D9D98 /* icon.xcf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.xcf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D88F4132D40191B0099A7FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF1A1202D38FC5C00490FE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D88F4172D40191B0099A7FA /* EnkiTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D88F4182D40191B0099A7FA /* EnkiTests.swift */,
+				5D88F4102D4016BD0099A7FA /* SM2_SchedulerTest.swift */,
+				5D88F4202D402DF50099A7FA /* CardTests.swift */,
+			);
+			path = EnkiTests;
+			sourceTree = "<group>";
+		};
+		5DF1A11A2D38FC5C00490FE7 = {
+			isa = PBXGroup;
+			children = (
+				5DF1A1252D38FC5C00490FE7 /* Enki */,
+				5D88F4172D40191B0099A7FA /* EnkiTests */,
+				5DF1A1242D38FC5C00490FE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF1A1242D38FC5C00490FE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF1A1232D38FC5C00490FE7 /* Enki.app */,
+				5D88F4162D40191B0099A7FA /* EnkiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DF1A1252D38FC5C00490FE7 /* Enki */ = {
+			isa = PBXGroup;
+			children = (
+				5D45A95D2D4432B500941E86 /* Model.xcdatamodeld */,
+				5DF1A1412D38FD2E00490FE7 /* Model */,
+				5DF1A13E2D38FCFA00490FE7 /* View */,
+				5DF1A13B2D38FCC300490FE7 /* Controller */,
+				5DF1A13C2D38FCD400490FE7 /* Resources */,
+				5DF1A1342D38FC5D00490FE7 /* Info.plist */,
+				5DF1A1282D38FC5C00490FE7 /* SceneDelegate.swift */,
+				5DF1A1262D38FC5C00490FE7 /* AppDelegate.swift */,
+				5DF3A3942D42E4E9002D9D98 /* CSVParser.swift */,
+				5D45A9602D44350400941E86 /* StringSanitizer.swift */,
+			);
+			path = Enki;
+			sourceTree = "<group>";
+		};
+		5DF1A13A2D38FCA400490FE7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5DF1A1312D38FC5D00490FE7 /* LaunchScreen.storyboard */,
+				5DF1A12C2D38FC5C00490FE7 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5DF1A13B2D38FCC300490FE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5DF1A12A2D38FC5C00490FE7 /* ViewController.swift */,
+				5D45A9622D44ABE200941E86 /* EditDeckViewController.swift */,
+				5DF3A3922D42D653002D9D98 /* AddCardViewController.swift */,
+				5DF1A1442D39029B00490FE7 /* HomeViewController.swift */,
+				5DF1A1482D3986B100490FE7 /* EditCardViewController.swift */,
+				5D17F9512D3B1374001723B7 /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5DF1A13C2D38FCD400490FE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DF3A3982D441AC5002D9D98 /* icon.xcf */,
+				5DF1A12F2D38FC5D00490FE7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5DF1A13E2D38FCFA00490FE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DF1A13A2D38FCA400490FE7 /* Storyboards */,
+				5DF3A3902D40553F002D9D98 /* DeckCellView.swift */,
+				5D45A9642D44ACC300941E86 /* CardCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5DF1A1412D38FD2E00490FE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5DF1A13F2D38FD2B00490FE7 /* Card.swift */,
+				5D2F562B2D3EBF6F004CDD76 /* Scheduler.swift */,
+				5D2F562D2D3EBF8A004CDD76 /* SM2_Scheduler.swift */,
+				5DF1A1422D38FE8900490FE7 /* Deck.swift */,
+				5D17F94F2D3B0A97001723B7 /* Statistic.swift */,
+				5D17F94B2D3B0727001723B7 /* DecksStorage.swift */,
+				5D17F94D2D3B0A56001723B7 /* StatisticsStorage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D88F4152D40191B0099A7FA /* EnkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D88F41C2D40191B0099A7FA /* Build configuration list for PBXNativeTarget "EnkiTests" */;
+			buildPhases = (
+				5D88F4122D40191B0099A7FA /* Sources */,
+				5D88F4132D40191B0099A7FA /* Frameworks */,
+				5D88F4142D40191B0099A7FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D88F41B2D40191B0099A7FA /* PBXTargetDependency */,
+			);
+			name = EnkiTests;
+			productName = EnkiTests;
+			productReference = 5D88F4162D40191B0099A7FA /* EnkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5DF1A1222D38FC5C00490FE7 /* Enki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF1A1372D38FC5D00490FE7 /* Build configuration list for PBXNativeTarget "Enki" */;
+			buildPhases = (
+				5DF1A11F2D38FC5C00490FE7 /* Sources */,
+				5DF1A1202D38FC5C00490FE7 /* Frameworks */,
+				5DF1A1212D38FC5C00490FE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Enki;
+			productName = Enki;
+			productReference = 5DF1A1232D38FC5C00490FE7 /* Enki.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DF1A11B2D38FC5C00490FE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				ORGANIZATIONNAME = andrewgein;
+				TargetAttributes = {
+					5D88F4152D40191B0099A7FA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5DF1A1222D38FC5C00490FE7;
+					};
+					5DF1A1222D38FC5C00490FE7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 5DF1A11E2D38FC5C00490FE7 /* Build configuration list for PBXProject "Enki" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DF1A11A2D38FC5C00490FE7;
+			productRefGroup = 5DF1A1242D38FC5C00490FE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DF1A1222D38FC5C00490FE7 /* Enki */,
+				5D88F4152D40191B0099A7FA /* EnkiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D88F4142D40191B0099A7FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF1A1212D38FC5C00490FE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF1A1332D38FC5D00490FE7 /* LaunchScreen.storyboard in Resources */,
+				5DF1A1302D38FC5D00490FE7 /* Assets.xcassets in Resources */,
+				5DF1A12E2D38FC5C00490FE7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D88F4122D40191B0099A7FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D88F4212D402DF50099A7FA /* CardTests.swift in Sources */,
+				5D88F41F2D4019210099A7FA /* SM2_SchedulerTest.swift in Sources */,
+				5D88F4192D40191B0099A7FA /* EnkiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DF1A11F2D38FC5C00490FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF1A12B2D38FC5C00490FE7 /* ViewController.swift in Sources */,
+				5DF1A1272D38FC5C00490FE7 /* AppDelegate.swift in Sources */,
+				5D2F562E2D3EBF8A004CDD76 /* SM2_Scheduler.swift in Sources */,
+				5DF3A3952D42E4E9002D9D98 /* CSVParser.swift in Sources */,
+				5D17F94C2D3B0727001723B7 /* DecksStorage.swift in Sources */,
+				5D17F94E2D3B0A56001723B7 /* StatisticsStorage.swift in Sources */,
+				5DF1A1432D38FE8900490FE7 /* Deck.swift in Sources */,
+				5DF1A1292D38FC5C00490FE7 /* SceneDelegate.swift in Sources */,
+				5D45A9632D44ABE200941E86 /* EditDeckViewController.swift in Sources */,
+				5D45A95F2D4432B500941E86 /* Model.xcdatamodeld in Sources */,
+				5DF3A3912D40553F002D9D98 /* DeckCellView.swift in Sources */,
+				5DF1A1402D38FD2B00490FE7 /* Card.swift in Sources */,
+				5D17F9502D3B0A97001723B7 /* Statistic.swift in Sources */,
+				5DF1A1492D3986B100490FE7 /* EditCardViewController.swift in Sources */,
+				5D2F562C2D3EBF6F004CDD76 /* Scheduler.swift in Sources */,
+				5D17F9522D3B1374001723B7 /* GameViewController.swift in Sources */,
+				5DF1A1452D39029B00490FE7 /* HomeViewController.swift in Sources */,
+				5D45A9612D44350400941E86 /* StringSanitizer.swift in Sources */,
+				5D45A9652D44ACC300941E86 /* CardCellView.swift in Sources */,
+				5DF3A3932D42D653002D9D98 /* AddCardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D88F41B2D40191B0099A7FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF1A1222D38FC5C00490FE7 /* Enki */;
+			targetProxy = 5D88F41A2D40191B0099A7FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DF1A12C2D38FC5C00490FE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF1A12D2D38FC5C00490FE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DF1A1312D38FC5D00490FE7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF1A1322D38FC5D00490FE7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D88F41D2D40191B0099A7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKV3NPV3L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgein.EnkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Enki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Enki";
+			};
+			name = Debug;
+		};
+		5D88F41E2D40191B0099A7FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKV3NPV3L9;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgein.EnkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Enki.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Enki";
+			};
+			name = Release;
+		};
+		5DF1A1352D38FC5D00490FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5DF1A1362D38FC5D00490FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DF1A1382D38FC5D00490FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKV3NPV3L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Enki/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgein.Enki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DF1A1392D38FC5D00490FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKV3NPV3L9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Enki/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewgein.Enki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D88F41C2D40191B0099A7FA /* Build configuration list for PBXNativeTarget "EnkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D88F41D2D40191B0099A7FA /* Debug */,
+				5D88F41E2D40191B0099A7FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF1A11E2D38FC5C00490FE7 /* Build configuration list for PBXProject "Enki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF1A1352D38FC5D00490FE7 /* Debug */,
+				5DF1A1362D38FC5D00490FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF1A1372D38FC5D00490FE7 /* Build configuration list for PBXNativeTarget "Enki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF1A1382D38FC5D00490FE7 /* Debug */,
+				5DF1A1392D38FC5D00490FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5D45A95D2D4432B500941E86 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5D45A95E2D4432B500941E86 /* Model.xcdatamodel */,
+			);
+			currentVersion = 5D45A95E2D4432B500941E86 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5DF1A11B2D38FC5C00490FE7 /* Project object */;
+}
